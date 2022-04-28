@@ -1,0 +1,19 @@
+.button-primary {
+    @include font-style('Public Sans400', 12px, 14px, $color-grayish-dark-blue) {
+    padding: 17px 36px 17px 32px;
+    border: 1px solid $color-grayish-dark-blue;
+    text-decoration: none;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: inline-block;
+    }
+}
+
+.button-primary:hover {
+    background-color: $color-grayish-dark-blue;
+    color: #FFF;
+}
+
+.button-primary:active {
+    opacity: 0.2;
+}

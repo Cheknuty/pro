@@ -1,0 +1,38 @@
+.site-footer {
+    padding: 24px 0;
+    background-color: $color-grayish-dark-blue;
+}
+
+.site-footer__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.site-footer__box {
+    display: flex;
+    align-items: center;
+}
+
+.site-footer__logo-link {
+    margin-right: 48px;
+}
+
+.site-footer__logo-img {
+    fill: #FFF;
+}
+
+@include max(630px) {
+    .site-footer__container {
+        flex-direction: column;
+    }
+
+    .site-footer__logo-link {
+        margin: 0;
+        margin-bottom: 40px;
+    }
+
+    .site-footer__box {
+        flex-direction: column;
+    }
+}

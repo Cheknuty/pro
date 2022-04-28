@@ -1,0 +1,58 @@
+.hero-section {
+    background-image: url(../../img/main/hero-sec.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-top: 243px;
+}
+
+@include retina-bgi {
+    .hero-section {
+        background-image: url(../../img/main/hero-sec@2x.jpg);
+    }
+}
+
+.hero-section__img {
+    display: none;
+}
+
+.hero-section__box {
+    display: block;
+    max-width: 445px;
+    padding: 56px 55px 0 0;
+    background-color: $color-very-light-grey;
+}
+
+.hero-section__desc {
+    @include font-style('Ibarra Real Nova700', 50px, 50px, $color-grayish-dark-blue) {
+        margin-top: 0;
+        margin-bottom: 53px;
+        letter-spacing: -0.446429px;
+    }
+}
+
+@include max(850px) {
+    .hero-section__desc {
+        margin-bottom: 48px;
+        font-size: 40px;
+        line-height: 42px;
+        letter-spacing: -0.357143px;
+    }
+}
+
+@include max(600px) {
+    .hero-section {
+        background-image: none;
+        padding-top: 0;
+    }
+
+    .hero-section__img {
+        display: block;
+        padding-top: 0;
+        max-width: auto;
+    }
+
+    .hero-section__box {
+        padding-top: 24px;
+        padding-right: 0;
+    }
+}

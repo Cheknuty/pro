@@ -1,0 +1,38 @@
+.cta-section {
+    padding: 150px 0;
+    display: flex;
+    align-items: center;
+}
+
+.cta-section__desc {
+    @include font-style('Ibarra Real Nova700', 40px, 42px, $color-grayish-dark-blue) {
+        margin: 0;
+        letter-spacing: -0.357143px;
+        max-width: 350px;
+    }
+}
+
+.cta-section__line {
+    max-width: 100%;
+    height: 1px;
+    flex-grow: 1;
+    background-color: $color-grayish-dark-blue;
+    opacity: 0.15;
+    margin-right: 32px;
+    margin-left: 32px;
+}
+
+@include max(700px) {
+    .cta-section {
+        padding: 96px 0;
+        flex-direction: column;
+    }
+
+    .cta-section__desc {
+        margin-bottom: 40px;
+    }
+    
+    .cta-section__line {
+        display: none;
+    }
+}

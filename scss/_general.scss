@@ -1,0 +1,25 @@
+/* GENERAL */
+html {
+    box-sizing: border-box;
+    height: 100%;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  
+  body {
+    padding: 0;
+    margin: 0;
+    font-family: $font-primary;
+    background-color: $color-very-light-grey;
+    color: $color-grayish-dark-blue;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Home</title>
+</head>
+<body>
+    <h1 class="visually-hidden">Portfolio</h1>
+    <header class="site-header">
+        <div class="site-header__container container">
+            <a class="site-header__logo-link" href="#">
+                <svg class="site-header__logo-img" width="61" height="32" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M31.35 26.12 15.67 0 0 26.12h31.35ZM60.08 5.88 44.41 32 28.73 5.88h31.35Z" fill="#33323D"/></svg>
+            </a>
+            <div class="site-header__box">
+                <button class="site-header__toggle">
+                    <img src="img/header/toggle.svg" class="site-header__toggle-img" width="24" height="13" alt="">
+                </button>
+                <div class="site-header__menu">
+                    <div class="site-header__menu-box">
+                        <a class="site-header__menu-link site-nav__item-link site-nav__item-link--white" href="#">HOME</a>
+                        <a class="site-header__menu-link site-nav__item-link site-nav__item-link--white" href="#">PORTFOLIO</a>
+                        <a class="site-header__menu-link site-nav__item-link site-nav__item-link--white" href="contact-me.html">CONTACT ME</a>
+                    </div>
+                </div>
+            </div>
+            <nav class="site-nav">
+                <ul class="site-nav__list">
+                    <li class="site-nav__item"><a class="site-nav__item-link" href="#">HOME</a></li>
+                    <li class="site-nav__item"><a class="site-nav__item-link" href="#">PORTFOLIO</a></li>
+                    <li class="site-nav__item"><a class="site-nav__item-link" href="contact-me.html">CONTACT ME</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="site-main">
+        <div class="site-main__container container">
+            <section class="hero-section">
+                <h2 class="visually-hidden">Intro</h2>
+                <img class="hero-section__img" src="img/main/hero-sec.jpg" srcset="img/main/hero-sec.jpg 1x, img/main/hero-sec.jpg 2x" width="688" height="600" alt="">
+                <div class="hero-section__box">
+                    <p class="hero-section__desc">
+                        Hey, I’m Alex Spencer and I love building beautiful websites
+                    </p>
+                    <a class="button-hero" href="#">
+                        <div class="button-hero__box">
+                            <svg class="button-hero__img" width="18" height="14" fill="none" stroke="#5FB4A2" xmlns="http://www.w3.org/2000/svg"><g><path d="m1 9 8 4 8-4"/><path opacity=".5" d="m1 5 8 4 8-4"/><path opacity=".25" d="m1 1 8 4 8-4"/></g></svg>
+                        </div>
+                        <p class="button-hero__desc">ABOUT ME</p>
+                    </a>
+                </div>
+            </section>
+            <section class="aboutme-section">
+                <img class="aboutme-section__img" src="img/main/person.jpg" srcset="img/main/person.jpg 1x, img/main/person@2x.jpg 2x" width="540" height="600" alt="">
+                <div class="aboutme-section__box">
+                    <h2 class="aboutme-section__title">About Me</h2>
+                    <p class="aboutme-section__subtitle">
+                        I’m a junior front-end developer looking for a new role 
+                        in an exciting company. I focus on writing accessible HTML, 
+                        using modern CSS practices and writing clean JavaScript. 
+                        When writing JavaScript code, I mostly use React, but I 
+                        can adapt to whatever tools are required. I’m based in 
+                        London, UK, but I’m happy working remotely and have 
+                        experience in remote teams. When I’m not coding, you’ll 
+                        find me outdoors. I love being out in nature whether that’s 
+                        going for a walk, run or cycling. I’d love you to check out my work.
+                    </p>
+                    <a class="button-primary" href="#">GO TO PORTFOLIO</a>
+                </div>
+            </section>
+            <section class="cta-section">
+                <h2 class="visually-hidden">Contact Me</h2>
+                <p class="cta-section__desc">Interested in doing a project together?</p>
+                <div class="cta-section__line"></div>
+                <a class="button-primary" href="contact-me.html">CONTACT ME</a>
+            </section>
+        </div>
+    </main>
+    <footer class="site-footer">
+        <div class="site-footer__container container">
+            <div class="site-footer__box">
+                <a class="site-footer__logo-link" href="#">
+                    <svg class="site-footer__logo-img"  fill="#33323D" width="61" height="32" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M31.35 26.12 15.67 0 0 26.12h31.35ZM60.08 5.88 44.41 32 28.73 5.88h31.35Z"/></svg>
+                </a>
+                <nav class="site-nav--not-responsive">
+                    <ul class="site-nav__list--responsive">
+                        <li class="site-nav__item--responsive"><a class="site-nav__item-link site-nav__item-link--white" href="#">HOME</a></li>
+                        <li class="site-nav__item--responsive"><a class="site-nav__item-link site-nav__item-link--white" href="#">PORTFOLIO</a></li>
+                        <li class="site-nav__item--responsive"><a class="site-nav__item-link site-nav__item-link--white" href="contact-me.html">CONTACT ME</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="site-social">
+                <a class="site-social__link" href="#">
+                    <svg class="site-social__link-img" width="25" height="24" fill="#FFF" xmlns="http://www.w3.org/2000/svg"><path d="M12.5 0C5.6 0 0 5.5 0 12.3c0 5.44 3.58 10.05 8.55 11.68.62.11.85-.27.85-.6L9.4 21.3c-3.48.74-4.22-1.66-4.22-1.66-.56-1.42-1.39-1.8-1.39-1.8-1.13-.76.1-.74.1-.74 1.25.08 1.9 1.26 1.9 1.26 1.12 1.89 2.93 1.34 3.65 1.03.11-.8.43-1.34.79-1.65-2.78-.3-5.7-1.36-5.7-6.08a4.7 4.7 0 0 1 1.3-3.3 4.31 4.31 0 0 1 .1-3.26s1.05-.33 3.44 1.27a12.18 12.18 0 0 1 6.25 0c2.37-1.6 3.42-1.27 3.42-1.27.67 1.7.25 2.95.13 3.26.8.86 1.28 1.96 1.28 3.3 0 4.73-2.93 5.77-5.7 6.07.43.37.84 1.13.84 2.28l-.02 3.37c0 .32.22.7.86.58 5-1.61 8.58-6.23 8.58-11.66C25 5.5 19.4 0 12.5 0Z"/></svg>
+                    </a>
+                <a class="site-social__link" href="#">
+                    <svg class="site-social__link-img" width="24" height="20" fill="#FFF" xmlns="http://www.w3.org/2000/svg"><path d="M24 2.56c-.88.39-1.83.65-2.83.77A4.93 4.93 0 0 0 23.34.61c-.95.56-2 .97-3.13 1.2a4.92 4.92 0 0 0-8.4 4.48C7.74 6.1 4.1 4.13 1.68 1.15A4.93 4.93 0 0 0 3.2 7.72a4.9 4.9 0 0 1-2.23-.61A4.93 4.93 0 0 0 4.92 12c-.69.19-1.45.23-2.22.08a4.93 4.93 0 0 0 4.6 3.42A9.9 9.9 0 0 1 0 17.54a13.94 13.94 0 0 0 7.55 2.21c9.14 0 14.3-7.72 14-14.64.95-.7 1.79-1.57 2.45-2.55Z"/></svg>
+                </a>
+                <a class="site-social__link" href="#">
+                    <svg class="site-social__link-img" width="24" height="24" fill="#FFF" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M2.4 0h19.2A2.4 2.4 0 0 1 24 2.4v19.2a2.4 2.4 0 0 1-2.4 2.4H2.4A2.4 2.4 0 0 1 0 21.6V2.4A2.4 2.4 0 0 1 2.4 0Zm1.2 20.4h3.6V9.6H3.6v10.8ZM5.4 7.56c-1.2 0-2.16-.96-2.16-2.16 0-1.2.96-2.16 2.16-2.16 1.2 0 2.16.96 2.16 2.16 0 1.2-.96 2.16-2.16 2.16ZM16.8 20.4h3.6v-6.84c0-2.28-1.92-4.2-4.2-4.2-1.08 0-2.4.72-3 1.68V9.6H9.6v10.8h3.6v-6.36c0-.96.84-1.8 1.8-1.8.96 0 1.8.84 1.8 1.8v6.36Z"/></svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>

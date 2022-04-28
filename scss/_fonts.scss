@@ -1,0 +1,37 @@
+@font-face {
+    font-family: 'Ibarra Real Nova700';
+    src: url('../fonts/IbarraRealNova-Bold.woff2') format('woff2'),
+        url('../fonts/IbarraRealNova-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ibarra Real Nova400';
+    src: url('../fonts/IbarraRealNova-Regular.woff2') format('woff2'),
+        url('../fonts/IbarraRealNova-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Public Sans400';
+    src: url('../fonts/PublicSans-Regular.woff2') format('woff2'),
+        url('../fonts/PublicSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Public Sans700';
+    src: url('../fonts/PublicSans-Bold.woff2') format('woff2'),
+        url('../fonts/PublicSans-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+

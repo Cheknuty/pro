@@ -1,0 +1,103 @@
+.contactme-section {
+    padding-top: 48px;
+    margin-bottom: 109px;
+    border-top: 1px solid rgba($color: $color-grayish-dark-blue, $alpha: 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contactme-section__title {
+    @include font-style('Ibarra Real Nova700', 40px, 42px, $color-grayish-dark-blue) {
+        margin: 0;
+        letter-spacing: -0.357143px;
+    }
+}
+
+.contactme-section__form {
+    max-width: 635px;
+    position: relative;
+}
+
+.contactme-section__box {
+    display: flex;
+    flex-direction: column;
+}
+
+.contactme-section__box-desc {
+    @include font-style('Public Sans700', 13px, 30px, $color-grayish-dark-blue){
+        opacity: 0.8;
+        margin-top: 0;
+        margin-bottom: 8px;
+    }
+}
+
+.contactme-section__box-input {
+    width: 635px;
+    border: none;
+    background-color: rgba($color: $color-grayish-dark-blue, $alpha: 0.1);
+    margin-bottom: 24px;
+    border: 1px solid transparent;
+}
+
+.contactme-section__box-input:nth-child(1), .contactme-section__box-input:nth-child(2) {
+    padding: 9px 16px;
+}
+
+.contactme-section__box-error {
+    @include font-style('Public Sans700', 10px, 12px, #F43030){
+        display: none;
+        margin: 0;
+        position: absolute;
+    }
+}
+
+.contactme-section__box:nth-child(1) .contactme-section__box-error{
+    top: 79px;
+}
+
+.contactme-section__box:nth-child(2) .contactme-section__box-error{
+    top: 179px;
+}
+
+.contactme-section__box:nth-child(3) .contactme-section__box-error{
+    top: 297px;
+}
+
+.contactme-section__box-input:not(:focus):not(:placeholder-shown):invalid ~ .contactme-section__box-error {
+    display: block;
+}
+
+.contactme-section__box-input:not(:focus):not(:placeholder-shown):invalid {
+    border: 1px solid #F43030;
+}
+
+.contactme-section__box-input:not(:focus):not(:placeholder-shown):valid {
+    border: 1px solid $color-slightly-desaturated-cyan;
+}
+
+
+.contactme-section__box-button {
+    @include font-style('Public Sans400', 12px, 14px, #FFF){
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 17px 24px;
+        background-color: $color-dark-blue;
+        border: none;
+    }
+}
+
+@include max(900px) {
+    .contactme-section__box-input{
+        width: 300px;
+    }
+
+    .contactme-section {
+        flex-direction: column;
+    }
+
+    .contactme-section__title {
+        margin-bottom: 24px;
+    }
+}

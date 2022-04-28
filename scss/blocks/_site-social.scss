@@ -1,0 +1,7 @@
+.site-social__link {
+    text-decoration: none;
+}
+
+.site-social__link:not(:last-child) {
+    margin-right: 16px;
+}
